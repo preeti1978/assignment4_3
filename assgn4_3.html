@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4.3 Animation</title>
+	<style type="text/css">
+		
+		/*defining start property*/
+		#div-box-start{
+			
+			width:100px;
+			height: 100px;
+			line-height: 100px; /*to vertically middle align the text within the div*/
+			left:50%;
+			background-color: green;
+			text-align: center;
+			color: white;
+			font-weight: bold;
+			font-family: verdana;
+			margin: auto;		
+
+			/*Transition property defnitions*/
+			transition-property: border-radius;
+			transition-duration: 5s;
+			transition-timing-function: ease-in;
+			
+			/*cross brwoser compatibility*/
+			-webkit-transition-property:  border-radius;
+			-moz-transition-property:  border-radius;
+			-o-transition-property:  border-radius;
+			-ms-transition-property:  border-radius;
+		}
+
+		/*defining final property desired on hover*/
+		#div-box-start:hover{
+			border-radius: 50%;
+			background-color: orange;
+			color: white;
+			font-weight: bold;
+			font-family: verdana;
+			margin: auto;	
+		}
+	</style>
+</head>
+<body style="align:center">
+<div id="div-box-start">Box</div>
+</body>
+</html>
